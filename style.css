@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Lobster&display=swap');
+
+  
+/* HTML and body should take up full height and have no margin or padding */
+ html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: "Comfortaa", sans-serif;
+}
+
+/* Flexbox layout to stretch the content */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+p {
+    font-family: "Comfortaa", sans-serif;
+}
+
+
+
+/* Basic styling for the example */
+header, footer {
+    background-color: #f8f8f8;
+    padding: 0px;
+    text-align: center;
+}
+
+footer {
+  padding: 10px;
+}
+
+li {
+  margin-bottom: 20px;
+}
+
+/* Make main content grow to take up available space */
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+}
+
+section {
+    flex-grow: 2;
+    padding: 10px;
+}
+
+aside {
+    text-align: center;
+    flex-grow: 1; 
+    background-color: #e0e0e0;
+    padding: 10px;
+}
+
+aside h2, header h1 {
+    font-family: "Lobster", sans-serif;
+}
+
+#list-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#list-column {
+    
+  background-color: pink;
+  margin:10px;
+  border: 1px black solid;
+  padding:40px;
+  border-radius: 10px;
+  /*flex-grow: 1;*/
+}
+
+
+/* Day 9 intro to responsive layout */
+
+table {
+    width: 50%;
+    border-collapse: collapse;
+    margin: 0 auto; /* removes top and bottom margins, automatically determine left and right margins*/
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Center the "My Schedule" heading */
+#schedule h1 {
+    text-align: center;
+}
+
+nav {
+background-color: #2b2b2b;
+padding: 0.2em;
+margin: 0;
+}
+
+#list-column li{
+    list-style: georgian outside url('/non-existent.svg');
+}
+
+/*day 6 add a navbar with flex*/
+
+/* day 7 Finis hup nav bar*/
+.nav-list ul {
+  display: flex;
+  justify-content: space-evenly; /* Space items evenly */
+  list-style: none; /* Remove default list styling */
+  padding: 0;
+ 
+}
+
+
+#gallery {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    margin: 20px auto;
+}
+
+
+
+#gallery img{
+   
+   
+   
+}
+
+#profile-picture {
+    border-radius: 150px;
+    border: 10px solid salmon;
+}
+
+
+.nav-list li {
+ 
+ /* padding: 20px; */
+}
+
+.nav-list a {
+    color: white;
+    text-decoration: none; /* remove underline */
+    
+}
+
+.nav-list a:hover {
+    color: #ffadbb;
+   
+}
+
+.nav-list, .nav-list a {
+   /* cursor: url("images/cat.gif"), auto;*/
+}
+
+/*day 8 - responsive styling*/
+
+/* Responsive styling */
+.image-responsive  {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+  }
+
+.gallery-img  {
+    
+    object-fit: scale-down; /* scale down to the smallest size to fit the container */
+ }
+
+/*
+https://www.tumblr.com/animatedglittergraphics-n-more/734094653600776192?source=share
+
+*/
+/* Responsive styling */
+
+/*
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+
+    aside {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    #nav-list {
+        flex-direction: column;
+    }
+
+    
+}*/
+
