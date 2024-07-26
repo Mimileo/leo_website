@@ -127,20 +127,34 @@ margin: 0;
 }
 
 
-#gallery {
+#gallery-grid {
     display: flex;
-    flex-direction: row;
-    gap: 40px;
+    flex-direction: column;
     margin: 20px auto;
 }
 
-
-
-#gallery img{
-   
-   
-   
+#gallery-row {
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+    row-gap: 60px;
 }
+
+.gallery-img  {
+    
+    object-fit: scale-down; /* scale down to the smallest size to fit the container */
+ }
+
+
+
+.image-responsive  {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+  }
+
+
+
 
 #profile-picture {
     border-radius: 150px;
@@ -171,16 +185,6 @@ margin: 0;
 /*day 8 - responsive styling*/
 
 /* Responsive styling */
-.image-responsive  {
-    width: 100%;
-    max-width: 150px;
-    height: auto;
-  }
-
-.gallery-img  {
-    
-    object-fit: scale-down; /* scale down to the smallest size to fit the container */
- }
 
 /*
 https://www.tumblr.com/animatedglittergraphics-n-more/734094653600776192?source=share
